@@ -9,22 +9,27 @@
 
 int main(void)
 {
-	int i;
-	int s;
+	int c, i;
 
-	for (i = 0; i <= 9; i++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (s = i + 1; s <= 9; s++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			putchar(s + '0');
-			putchar(s + '0');
-			if (((i * 10) + s) < 89)
+			if (c < i)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(c);
+				putchar(i);
+
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
