@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the numbers from 1 to 89, numbers separated by
+ * main - Prints the numbers from 01 to 89, numbers separated by
  * a comma followed by a space, in ascending order.
  *
  * Return: Always 0.
