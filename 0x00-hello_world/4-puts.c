@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
-* fist programming.
-* using puts function.
+* main - the main function is the start of the program.
+* Return: 0 for the sucessful execution.
 */
 int main(void)
 {
-puts("Programming is like building a multilingual puzzle\n");
+puts("\"Programming is like building a multilingual puzzle\n");
 return (0);
 }
