@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - is the main function and the start of the program.
+ * print_alphabet - is a function that prints the alphabet letters.
  * Description: Write a function that prints the alphabet, in lowercase,
  * followed by a new line.
  * You can only use _putchar twice in your code
