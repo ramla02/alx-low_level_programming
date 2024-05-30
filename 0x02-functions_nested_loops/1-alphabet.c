@@ -6,6 +6,8 @@
  * You can only use _putchar twice in your code
  * Return: 0 for the successful execution.
  */
+void print_alphabet(void);
+
 int main(void)
 {
 	char alphabet;
