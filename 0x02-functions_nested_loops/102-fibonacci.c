@@ -8,24 +8,25 @@
  */
 int main(void)
 {
-	int n = 2;
-	long int i = 1, j = 2, k;
+	long int i, j, k, next;
 
-	printf("%lu, ", i);
-	while (n <= 50)
+	j = 1;
+
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		if (n == 50)
+		if (j != 20365011074)
 		{
-			printf("%lu\n", j);
+			printf("%ld, ", j);
 		}
 		else
 		{
-			printf("%lu, ", i);
+			printf("%ld\n", j);
 		}
-		k = j;
-		j += i;
-		i = k;
-		n++;
+		next = j + k;
+		j = k;
+		k = next;
 	}
 	return (0);
 }
