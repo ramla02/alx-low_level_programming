@@ -1,4 +1,4 @@
-#include "main/h"
+#include "main.h"
 #include <stdio.h>
 /**
  * main - a program that adds positive numbers.
@@ -6,6 +6,8 @@
  * If no number is passed to the program, print 0, followed by a new line
  * You can assume that numbers and the addition of all the numbers can
  * be stored in an int
+ * @argc: number of arguments
+ * @argv: arguments
  * Return: Error If one of the number contains symbols that are not digits
  * otherwise return 1
  */
