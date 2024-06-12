@@ -44,7 +44,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	mulrem = addrem = 0;
 	for (j = num_index, k = dest_index; j >= 0; j--, k--)
 	{
-		mul = (n - '0') * (num[j] - '0') + addrem;
+		mul = (n - '0') * (num[j] - '0') + mulrem;
 		mulrem = mul / 10;
 		add = (dest[k] - '0') + (mul % 10) + addrem;
 		addrem = add / 10;
@@ -97,7 +97,8 @@ void init(char *str, int l)
 	int i;
 
 	for (i = 0; i < l; i++)
-		str[i] = '\0';
+		str[i] = '0';
+	str[i] = '\0';
 }
 
 /**
