@@ -1,8 +1,9 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * dlistint_len - count the number of nodes in the linked list
- * @h: pointer to the beginning of a linked list
+ * @h: head of a linked list
  * Return: number of nodes
  */
 
